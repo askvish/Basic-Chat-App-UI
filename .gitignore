@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+.firebase/
+.firebaserc
+firebase.json
+firebase-debug.log
+
+eslint.config.js

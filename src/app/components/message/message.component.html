@@ -1,0 +1,16 @@
+<div class="chat-message-wrapper" [@messageState]="'in'">
+  <div class="chat-message-info">
+    <ng-container [ngSwitch]="message.type">
+      <span *ngSwitchCase="'JOIN'" class="system-message join">
+        <strong>{{ message.sender }}</strong> has joined the chat
+      </span>
+      <span *ngSwitchCase="'LEAVE'" class="system-message leave">
+        <strong>{{ message.sender }}</strong> has left the chat
+      </span>
+      <span *ngSwitchCase="'CHAT'" class="user-message">
+        <span class="sender">{{ message.sender }}:</span>
+        <span class="content">{{ message.content }}</span>
+      </span>
+    </ng-container>
+  </div>
+</div>

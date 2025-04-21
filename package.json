@@ -6,19 +6,27 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^19.1.0",
+    "@angular/animations": "^19.2.6",
+    "@angular/cdk": "^19.2.9",
     "@angular/common": "^19.1.0",
     "@angular/compiler": "^19.1.0",
     "@angular/core": "^19.1.0",
     "@angular/forms": "^19.1.0",
+    "@angular/material": "^19.2.9",
     "@angular/platform-browser": "^19.1.0",
     "@angular/platform-browser-dynamic": "^19.1.0",
     "@angular/router": "^19.1.0",
+    "@stomp/stompjs": "^7.1.1",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.1",
     "rxjs": "~7.8.0",
+    "sockjs-client": "^1.6.1",
+    "stream-browserify": "^3.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
@@ -27,12 +35,17 @@
     "@angular/cli": "^19.1.8",
     "@angular/compiler-cli": "^19.1.0",
     "@types/jasmine": "~5.1.0",
+    "@types/sockjs-client": "^1.5.4",
+    "@types/stompjs": "^2.3.5",
+    "angular-eslint": "19.3.0",
+    "eslint": "^9.23.0",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.7.2"
+    "typescript": "~5.7.2",
+    "typescript-eslint": "8.27.0"
   }
 }
