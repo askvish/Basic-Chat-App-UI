@@ -15,6 +15,7 @@ import {
 } from '@angular/animations';
 import { Message, WebSocketService } from '../../services/websocket.service';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MessageComponent } from '../message/message.component';
@@ -28,6 +29,7 @@ import { MatButtonModule } from '@angular/material/button';
     MessageComponent,
     MatIconModule,
     MatButtonModule,
+    MatInputModule,
   ],
 
   standalone: true,

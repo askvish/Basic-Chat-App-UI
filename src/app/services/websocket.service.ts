@@ -14,8 +14,8 @@ export interface Message {
 })
 export class WebSocketService {
   private stompClient: any;
-  // private serverUrl = 'https://chat-app-by-ashok-2ae5a2c5f8df.herokuapp.com/ws';
-  private serverUrl = 'http://localhost:8080/ws';
+  private serverUrl = 'https://chat-app-by-ashok-2ae5a2c5f8df.herokuapp.com/ws';
+  // private serverUrl = 'http://localhost:8080/ws';
   private messageSubject = new BehaviorSubject<Message[]>([]);
   private connectionStatusSubject = new BehaviorSubject<boolean>(false);
 
